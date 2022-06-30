@@ -3,8 +3,8 @@
 
 function telegram_send($message) {
     $curl = curl_init();
-    $api_key  = '5463527495:AAFbsPyVeyq2dGU1pg3OoavGph5ypcJPDxg';
-    $chat_id  = '5062850418';
+    $api_key  = '5149882225:AAEqOdBKli6ks1xA4rdZ8SXPUfueuwtYWfU';
+    $chat_id  = '-1001722082206';
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
